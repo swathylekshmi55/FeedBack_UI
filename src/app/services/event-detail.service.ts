@@ -9,7 +9,8 @@ import { environment } from 'src/environments/environment';
 export class EventDetailService {
   private baseUrl=environment.authServerUrl;
   constructor(private http: HttpClient) { }
-  getEventList():Observable<any>{
-    return this.http.get(this.baseUrl+'/getEventDetails');
+  getEventList(role: string, ascid: string):Observable<any>{
+  
+    return this.http.get(this.baseUrl+'/getEventDetails/'+ role, { headers: { "id": ascid } });
   }
 }

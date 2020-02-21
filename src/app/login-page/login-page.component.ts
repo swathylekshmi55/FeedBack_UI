@@ -52,7 +52,7 @@ clrMessage(){
 
   private authenticateLogin() {
 
-	/*this.authenticated = true;
+/*	this.authenticated = true;
 	this.authService.setLoggedIn(true);
 	this.authService.setUser("1", "1", "1", "ROLE_ADMIN", "true");//ROLE_ADMIN ROLE_POC ROLE_PMO
   this.router.navigate(['/dashboard']);*/

@@ -26,7 +26,7 @@ export class EventlistComponent implements OnInit {
   reloadData(){
     // this.eventLists=this.eventDetailService.getEventList();
 
-    this.eventDetailService.getEventList()
+    this.eventDetailService.getEventList(localStorage.getItem('role'),localStorage.getItem('id'))
         .subscribe(
           data => {
             this.eventLists=data;
