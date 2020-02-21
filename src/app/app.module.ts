@@ -52,7 +52,7 @@ const routes: Routes = [
   { path: 'sendmail',       component: SendMailComponent        },
   { path: 'feedbackreport', component: FeedbackReportComponent  },
   { path: 'eventlist',      component: EventlistComponent       },
-  { path: 'event',          component: EventComponent           },
+  { path: 'event/:eid',          component: EventComponent           },
   { path: 'feedbackQuestion',component: FeedbackQuestionsComponent},
   { path: 'FeedbackQuestAdd',component: FeedbackQuestAddComponent},
   { path: 'FeedbackQuestEdit/:id',component: FeedbackQuestEditComponent},

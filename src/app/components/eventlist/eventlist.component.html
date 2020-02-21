@@ -20,7 +20,7 @@
       </thead>
       <tbody *ngFor="let data of eventLists | filter:eventIdSearch:monthSearch">
          <tr>
-            <td style="width:150px;"> <button class="btn btn-primary" style="width:100px;background-color: #0039a6;" (click)="eventDetails(data.eventId)"><i class="fa fa-eye" aria-hidden="true"></i>VIEW</button></td>
+            <td style="width:150px;"> <button class="btn btn-primary" style="width:100px;background-color: #0039a6;" routerLink="/event/{{data.eventId}}"><i class="fa fa-eye" aria-hidden="true"></i>VIEW</button></td>
             <td>{{data.eventId}}</td>
             <td>{{data.baseLocation}}</td>
             <td>{{data.beneficiaryName}}</td>
@@ -34,7 +34,7 @@
     councilName:String;
     eventMonth:String; -->
       </tr>   
-      <tr style="display: none;width: 100%;" class="viewCls_{{data.eventId}}">
+      <tr style="width: 100%;" ><!--class="viewCls_{{data.eventId}}"-->
         <td></td>
         <td colspan="5">
         <div class="row">

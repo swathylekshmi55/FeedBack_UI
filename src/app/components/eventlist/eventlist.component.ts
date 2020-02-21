@@ -30,10 +30,9 @@ export class EventlistComponent implements OnInit {
         .subscribe(
           data => {
             this.eventLists=data;
-        
         });
   }
-  eventDetails(eid){
+ /* eventDetails(eid){
     
     let shand = document.getElementsByClassName('viewCls_'+eid) as HTMLCollectionOf<HTMLElement>;
    // this.router.navigate(['/event'])
@@ -48,7 +47,9 @@ export class EventlistComponent implements OnInit {
       shand[0].style.width = "100%";
     }
   }
-  }
+  }*/
+
+
 filterItemsOfType(type){
     return this.datalist.filter(x => x.data.type == type);
 }

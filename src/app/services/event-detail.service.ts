@@ -13,4 +13,8 @@ export class EventDetailService {
   
     return this.http.get(this.baseUrl+'/getEventDetails/'+ role, { headers: { "id": ascid } });
   }
+  getEventBeneficiary(eid: string):Observable<any>{
+    
+    return this.http.get(this.baseUrl+'/getEventBeneficiary/'+ eid );
+  }
 }
